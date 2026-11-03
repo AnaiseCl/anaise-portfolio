@@ -1,12 +1,23 @@
 import { CardHeader } from "@/components/card-header";
 import { Section } from "@/components/section";
 
-const skills = [
-  "Team leadership",
-  "Process documentation",
-  "SharePoint",
-  "Excel",
-  "Foundational cybersecurity knowledge",
+const skillGroups = [
+  {
+    title: "Operations & Leadership",
+    skills: ["Team leadership", "Process documentation", "Process improvement"],
+  },
+  {
+    title: "Workplace Tools",
+    skills: ["SharePoint", "Excel", "Asana", "Power BI (foundational)"],
+  },
+  {
+    title: "Cybersecurity Foundations",
+    skills: [
+      "Foundational cybersecurity knowledge",
+      "Wireshark (coursework)",
+      "Cisco Packet Tracer (coursework)",
+    ],
+  },
 ];
 
 const projects = [
@@ -55,16 +66,28 @@ export default function Page() {
             </Section>
 
             <Section id="skills" title="Skills">
-              <ul className="flex flex-wrap gap-2">
-                {skills.map((skill) => (
-                  <li
-                    key={skill}
-                    className="rounded-full border border-primary/15 bg-secondary px-4 py-1.5 text-sm font-medium text-body"
+              <div className="flex flex-col gap-6">
+                {skillGroups.map((group) => (
+                  <div
+                    key={group.title}
+                    className="flex flex-col gap-3 md:flex-row md:gap-6"
                   >
-                    {skill}
-                  </li>
+                    <h3 className="text-xs font-semibold uppercase tracking-[0.14em] text-primary md:w-44 md:shrink-0 md:pt-2">
+                      {group.title}
+                    </h3>
+                    <ul className="flex flex-wrap gap-2">
+                      {group.skills.map((skill) => (
+                        <li
+                          key={skill}
+                          className="rounded-full border border-primary/15 bg-secondary px-4 py-1.5 text-sm font-medium text-body"
+                        >
+                          {skill}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 ))}
-              </ul>
+              </div>
             </Section>
 
             <Section id="projects" title="Projects">

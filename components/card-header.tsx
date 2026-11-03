@@ -10,6 +10,9 @@ export function CardHeader() {
       <h1 className="mt-6 font-serif text-5xl font-semibold tracking-tight text-balance md:text-6xl">
         Anaïse
       </h1>
+      <p className="mt-2 font-serif text-lg italic text-muted-foreground text-balance md:text-xl">
+        Bringing an operations mindset to cybersecurity.
+      </p>
       <div aria-hidden="true" className="mt-4 flex items-center gap-3">
         <span className="h-px w-10 bg-gold/70" />
         <span className="size-1.5 rotate-45 bg-gold" />

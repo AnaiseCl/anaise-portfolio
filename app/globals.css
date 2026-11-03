@@ -8,6 +8,7 @@
   --font-sans: var(--font-sans-family), ui-sans-serif, system-ui, sans-serif;
   --font-serif: var(--font-serif-family), ui-serif, Georgia, serif;
   --color-gold: var(--gold);
+  --color-body: var(--body);
   --color-blush: var(--blush);
   --color-ring: var(--ring);
   --color-input: var(--input);
@@ -49,7 +50,8 @@
   --secondary: #f6e3e6;
   --secondary-foreground: #6e3445;
   --muted: #f3ece0;
-  --muted-foreground: #5e5357;
+  --muted-foreground: #4a3529;
+  --body: #3b2a20;
   --accent: #f6e3e6;
   --accent-foreground: #6e3445;
   --destructive: oklch(0.577 0.245 27.325);

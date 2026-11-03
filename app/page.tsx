@@ -37,7 +37,7 @@ export default function Page() {
 
           <div className="mt-12 flex flex-col gap-8">
             <Section id="about" title="About Me">
-              <div className="flex flex-col gap-4 leading-relaxed text-foreground/90">
+              <div className="flex flex-col gap-4 leading-relaxed text-body">
                 <p>
                   I am pursuing my bachelor&apos;s degree in cybersecurity at
                   Southern New Hampshire University.
@@ -59,7 +59,7 @@ export default function Page() {
                 {skills.map((skill) => (
                   <li
                     key={skill}
-                    className="rounded-full border border-primary/15 bg-secondary px-4 py-1.5 text-sm font-medium text-secondary-foreground"
+                    className="rounded-full border border-primary/15 bg-secondary px-4 py-1.5 text-sm font-medium text-body"
                   >
                     {skill}
                   </li>
